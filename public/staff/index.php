@@ -1,28 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Studious</title>
-  <link rel="stylesheet" href="../styles/staff.css">
-</head>
-<body>
-  <header>
-    <h1>Studious - Staff Area</h1>
-  </header>
+<?php require_once "../../private/initialize.php"; ?>
 
-  <nav>
-    <ul>
-      <li><a href="index.php">Menu</a></li>
-    </ul>
-  </nav>
+<?php include "../../private/shared/staff-header.php"; ?>
 
-  <div id="content">
+<div id="content">
 
-  </div>
+</div>
 
-  <footer>
-    &copy; <?php echo date('Y'); ?> Studious
-  </footer>
-</body>
-</html>
+<?php include "../../private/shared/staff-footer.php"; ?>
