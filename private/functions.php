@@ -6,3 +6,11 @@
     }
     return WEB_ROOT . $scriptPath;
   }
+
+  function encode($string="") {
+    return urlencode($string);
+  }
+
+  function rawEncode($string="") {
+    return rawurlencode($string);
+  }
