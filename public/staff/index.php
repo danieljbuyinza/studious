@@ -4,7 +4,12 @@
 <?php include SHARED_PATH . "/staff-header.php"; ?>
 
 <div id="content">
-
+  <div id="main-menu">
+    <h2>Main Menu</h2>
+    <ul>
+      <li><a href="courses/index.php">Courses</a></li>
+    </ul>
+  </div>
 </div>
 
 <?php include SHARED_PATH . "/staff-footer.php"; ?>
