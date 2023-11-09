@@ -2,7 +2,7 @@
 
 <?php
   $id = $_GET['id'] ?? "1";
-  echo $id;
+  echo htmlChars($id);
 ?>
 
 <a href="show.php?name=<?php echo encode('John Doe'); ?>">Link</a><br>

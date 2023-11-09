@@ -14,3 +14,7 @@
   function rawEncode($string="") {
     return rawurlencode($string);
   }
+
+  function htmlChars($string="") {
+    return htmlspecialchars($string);
+  }
