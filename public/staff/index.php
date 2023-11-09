@@ -8,6 +8,7 @@
     <h2>Main Menu</h2>
     <ul>
       <li><a href="<?php echo urlFor('/staff/courses/index.php'); ?>">Courses</a></li>
+      <li><a href="<?php echo urlFor('/staff/lessons/index.php'); ?>">Lessons</a></li>
     </ul>
   </div>
 </div>

@@ -33,11 +33,11 @@
 
       <?php foreach($courses as $course) { ?>
         <tr>
-          <td><?php echo $course['id']; ?></td>
-          <td><?php echo $course['position']; ?></td>
+          <td><?php echo htmlChars($course['id']); ?></td>
+          <td><?php echo htmlChars($course['position']); ?></td>
           <td><?php echo $course['visible'] == 1 ? 'true' : 'false'; ?></td>
-    	    <td><?php echo $course['menu_name']; ?></td>
-          <td><a href="<?php echo urlFor('/staff/courses/show.php?id=' . $course['id']); ?>" class="action">View</a></td>
+    	    <td><?php echo htmlChars($course['menu_name']); ?></td>
+          <td><a href="<?php echo htmlChars(urlFor('/staff/courses/show.php?id=' . $course['id'])); ?>" class="action">View</a></td>
           <td><a href="">Edit</a></td>
           <td><a href="">Delete</a></td>
     	  </tr>
