@@ -28,3 +28,8 @@
     header($_SERVER['SERVER_PROTOCOL'] . " 500 Internal Server Error");
     exit();
   }
+
+  function redirectTo($location) {
+    header("Location: " . $location);
+    exit();
+  }
