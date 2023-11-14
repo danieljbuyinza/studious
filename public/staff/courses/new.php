@@ -20,7 +20,7 @@
   <div class="subject new">
     <h1>Create Course</h1>
 
-    <form action="" method="post">
+    <form action="<?php echo urlFor("/staff/courses/create.php"); ?>" method="post">
       <dl>
         <dt>Menu Name</dt>
         <dd><input type="text" name="menu_name" value="" /></dd>

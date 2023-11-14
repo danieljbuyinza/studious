@@ -27,7 +27,8 @@ header h1 {
 	text-align: center;
 }
 
-input[type="submit"] {
+input[type="submit"],
+input[type="text"] {
 	font-family: "DM Sans", Verdana, Helvetica, sans-serif;
 }
 

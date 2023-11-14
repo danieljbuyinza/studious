@@ -1,10 +1,10 @@
 <?php
-  function urlFor($scriptPath) {
+  function urlFor($fileInPublic) {
     // add the leading '/' if not present
-    if($scriptPath[0] != '/') {
-      $scriptPath = "/" . $scriptPath;
+    if($fileInPublic[0] != '/') {
+      $fileInPublic = "/" . $fileInPublic;
     }
-    return WEB_ROOT . $scriptPath;
+    return WEB_ROOT . $fileInPublic;
   }
 
   function encode($string="") {
