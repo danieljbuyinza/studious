@@ -10,15 +10,15 @@
   }
 ?>
 
-<?php $page_title = "Create Course"; ?>
+<?php $page_title = "Edit Course"; ?>
 <?php include SHARED_PATH . "/staff-header.php"; ?>
 
 <div id="content">
 
   <a class="back-link" href="<?php echo urlFor('/staff/courses/index.php'); ?>">&laquo; Back to List</a>
 
-  <div class="subject new">
-    <h1>Create Course</h1>
+  <div class="subject edit">
+    <h1>Edit Course</h1>
 
     <form action="" method="post">
       <dl>
@@ -41,7 +41,7 @@
         </dd>
       </dl>
       <div id="operations">
-        <input type="submit" value="Create Course" />
+        <input type="submit" value="Edit Course" />
       </div>
     </form>
 

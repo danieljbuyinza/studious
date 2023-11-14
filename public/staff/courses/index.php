@@ -17,7 +17,7 @@
     <h1>Courses</h1>
 
     <div class="actions">
-      <a href="" class="action">Create New Course</a>
+      <a href="<?php echo urlFor("/staff/courses/new.php"); ?>" class="action">Create New Course</a>
     </div>
 
   	<table class="list">
@@ -38,7 +38,7 @@
           <td><?php echo $course['visible'] == 1 ? 'true' : 'false'; ?></td>
     	    <td><?php echo htmlChars($course['menu_name']); ?></td>
           <td><a href="<?php echo htmlChars(urlFor('/staff/courses/show.php?id=' . $course['id'])); ?>" class="action">View</a></td>
-          <td><a href="">Edit</a></td>
+          <td><a href="<?php echo htmlChars(urlFor('/staff/courses/edit.php?id=' . $course['id'])); ?>">Edit</a></td>
           <td><a href="">Delete</a></td>
     	  </tr>
       <?php } ?>
