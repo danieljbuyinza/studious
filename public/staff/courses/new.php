@@ -1,12 +1,15 @@
 <?php require_once "../../../private/initialize.php";
-  $test = $_GET['test'] ?? "";
 
-  if ($test == "404") {
-    error404();
-  } elseif ($test == "500") {
-    error500();
-  } elseif ($test == "redirect") {
-    redirectTo(urlFor("/staff/courses/index.php"));
+  if (isPostRequest()) {
+    // Handle form values sent by new.php
+    $menu_name = $_POST['menu_name'] ?? '';
+    $position = $_POST['position'] ?? '';
+    $visible = $_POST['visible'] ?? '';
+
+    echo "Form parameters<br />";
+    echo "Menu name: " . $menu_name . "<br>";
+    echo "Position: " . $position . "<br>";
+    echo "Visible: " . $visible . "<br>";
   }
 ?>
 
@@ -20,7 +23,7 @@
   <div class="subject new">
     <h1>Create Course</h1>
 
-    <form action="<?php echo urlFor("/staff/courses/create.php"); ?>" method="post">
+    <form action="<?php echo urlFor("/staff/courses/new.php"); ?>" method="post">
       <dl>
         <dt>Menu Name</dt>
         <dd><input type="text" name="menu_name" value="" /></dd>
